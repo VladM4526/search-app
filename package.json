@@ -1,0 +1,25 @@
+{
+  "name": "search-photo-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist"
+  },
+  "homepage": "https://github.com/VladM4526/search-photo.git",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.10.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "gh-pages": "^6.0.0",
+    "notiflix": "^3.2.6",
+    "simplelightbox": "^2.14.2"
+  }
+}

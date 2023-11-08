@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css">
+    <link rel="stylesheet" href="./styles/base-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base-styles.css">
+    <link rel="stylesheet" href="./styles/main-style.css">
+</head>
+<body>
+    <div class="search-header">
+        <a class="link-refresh" href="./index.html">
+            <h1 class="search-title">Search photos</h1>
+        </a>
+    </div>
+    <form id="search-photo">
+        <div class="search-input-container">
+            <input class="search-input" type="text" name="searchQuery" autocomplete="off" placeholder="Search...">
+            <button type="submit" class="search-button">
+                <svg class="search-button-icon">
+                    <use href="./img/search-icon.svg#icon-bi_search"></use>
+                </svg>
+            </button>
+        </div>
+
+    </form>
+
+    <span></span>
+    <div class="search-result-container">
+        <ul class="search-result"></ul>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+</body>
+</html>
