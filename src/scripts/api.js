@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URl_PHOTOS = "https://pixabay.com/api/";
 
-const API_KEY = "27705044-7405daf320d0c0d335478c588";
+const { API_KEY } = process.env;
 const QUERY_OPT_PHOTOS =
   "image_photo&orientation=horizontal&order&category&safesearch=true";
 
